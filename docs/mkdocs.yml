@@ -1,0 +1,30 @@
+site_name: MyTonWallet Pay API SDK
+site_description: Python библиотека для работы с MyTonWallet Pay API
+site_author: LaFTon Technology
+repo_url: https://github.com/LaFTonTechnology/mytonwallet_pay
+repo_name: mytonwallet_pay
+
+nav:
+  - Home: index.md
+  - API: api.md
+  - Examples: examples.md
+
+theme:
+  language: ru
+  name: material
+  logo: assets/mtwpayLogo.png
+  favicon: images/mtwpayLogo.ico
+  palette:
+    primary: indigo
+    accent: pink
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: auto
