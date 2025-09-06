@@ -61,8 +61,7 @@ class AiohttpSession:
                 url=self.base_url.format(method=method.__api_method__),
                 params=method.model_dump(exclude_none=True),
                 headers={
-                    "X-Project-Api-Key": mtw_pay._token,
-                    "Content-Type": "application/json"
+                    "X-Project-Api-Key": mtw_pay._token
                 },
             )
             response = self.check_response(mtw_pay, method, await resp.json())

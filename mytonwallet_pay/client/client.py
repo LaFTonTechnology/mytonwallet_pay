@@ -30,7 +30,7 @@ class MTWPay(Methods, Tools):
         result_auth = token_validate(self)
         if not result_auth:
             raise APIError("Authorization failed", 401)
-        client.info("Successful authorization in CardLink API")
+        client.info("Successful authorization in MyTonWallet Pay API")
 
 
     async def __call__(
@@ -44,7 +44,7 @@ class MTWPay(Methods, Tools):
         :return: :class:`mytonwallet_pay.types.MTWPayBaseType` object.
         """
         client.debug(
-            "Requesting: /%s with payload %s",
+            "Request: /%s with payload %s",
             method.__class__.__name__,
             method.model_dump_json(),
         )
