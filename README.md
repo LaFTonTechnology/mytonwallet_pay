@@ -19,6 +19,11 @@
 
 ---
 
+
+### 📦 PyPI
+[![Latest Version](https://img.shields.io/pypi/v/mtwpay.svg)](https://pypi.org/project/mtwpay/)
+
+
 ### 📖 Документация
 [![Docs](https://img.shields.io/badge/docs-online-brightgreen)](https://laftontechnology.github.io/mytonwallet_pay/)
 
